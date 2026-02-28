@@ -12,7 +12,7 @@ def check_dependencies():
         sys.exit(1)
 
 def search_youtube(query, max_results=5):
-    print(f"\n🔍 '{query}' aranıyor...\n")
+    print(f"\n '{query}' aranıyor...\n")
     
     ydl_opts = {
         "quiet": True,
@@ -32,7 +32,7 @@ def search_youtube(query, max_results=5):
             return []
 
 def play_video(url, audio_only=False):
-    print(f"\n▶️ Oynatılıyor: {url}\n")
+    print(f"\n Oynatılıyor: {url}\n")
     
     cmd = [
         "mpv",
